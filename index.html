@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Countries</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class=" bg-white">
+    <header class="container mx-auto">
+        <h1 class="text-center text-black font-bold text-3xl pt-12 mb-12">Welcome to Rest World</h1>
+       
+    </header>
+    <main class="container mx-auto">
+        <section>
+             <!-- Searching -->
+            <div class="form-control mb-12 w-20 flex flex-row">
+                <input id="search-field" type="text" placeholder="Search" class="input bg-gray-100" />
+                <button onclick="searchMeal()" id="search-btn" type="submit" class="btn btn-primary bg-blue-600">Search</button>
+              </div>
+            </section>
+        <section id="countries-info" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        </section>
+        <div class="text-end lg:px-12">
+            <button onclick="showAllDataTogether()" class="btn btn-primary mt-12">See All</button>
+        </div>
+        <div id="modal-info">
+            <input type="checkbox" id="my-modal-3" class="modal-toggle" />
+          </div>
+    </main>
+
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
